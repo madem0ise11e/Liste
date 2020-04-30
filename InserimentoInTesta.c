@@ -39,7 +39,7 @@ void stampaLista( struct elem* top){
     printf("\nStampa Lista:\n");
     while(tmp!=NULL){ //sono sicura che all'interno del while tmp e' diverso da NULL
                       //in modo tale da poter accedere ai campi!!!
-      printf("%d\n", tmp->mat);
-      tmp=tmp->next;
+    printf("%d\n", tmp->mat);
+    tmp=tmp->next;
     }
 }

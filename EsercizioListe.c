@@ -17,17 +17,17 @@ void stampaLista(struct studente* top);
 
 int main(){
   int i=0, n=0;
-  struct studente *s[MAXLEN];
+  struct studente *s=NULL;
   printf("Quanti studenti vuoi aggiungere? ");
   scanf("%d", &n);
   for(i=0; i<n; ++i){
-    s[] = addInTesta(s,i);
-  //  top2 = addInCoda(top2,i);
+    s = addInTesta(s,i);
+  //  s2 = addInCoda(s2,i);
   }
   printf("stampa Lista in testa");
   stampaLista(s);
   printf("stampa Lista in coda");
-//  stampaLista(top2);
+//  stampaLista(s2);
 return 0;
 }
 

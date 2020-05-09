@@ -11,7 +11,7 @@ struct studente {
   struct studente *next;
 };
 
-struct studente *addInTesta(struct studente *s[], int i);
+struct studente *addInTesta(struct studente *s, int i);
 //struct studente *addInCoda(struct studente *s[], int i);
 void stampaLista(struct studente* top);
 
@@ -31,13 +31,10 @@ int main(){
 return 0;
 }
 
-struct studente *addInTesta(struct studente *s[], int i){
+struct studente *addInTesta(struct studente *s, int i){
   struct studente *tmp = (struct studente *)malloc(sizeof(struct studente));
   tmp->cognome = i;
-  tmp->nome = i;
-  tmp->matricola = i;
-  tmp->mediaVoti = i;
-  tmp->next=t;
+  tmp->next=s;
   s=tmp;
   return s;
 }
